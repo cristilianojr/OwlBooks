@@ -14,10 +14,8 @@ function changeMenu() {
 }
 
 $(document).ready(function () {
-    // Defina o valor de largura em que você deseja alterar o estilo para 'flex'
-    const larguraMinima = 600; // Por exemplo, para telas maiores que 768px
+    const larguraMinima = 600; 
 
-    // Função para verificar a largura da tela e aplicar o estilo
     function verificarLargura() {
         const larguraDaTela = $(window).width();
         const elemento = $('#navbar'); 
@@ -29,12 +27,7 @@ $(document).ready(function () {
         }
     }
 
-    // Chame a função no carregamento da página e sempre que a janela for redimensionada
     verificarLargura();
 
     $(window).resize(verificarLargura);
 });
-
-
-
-
